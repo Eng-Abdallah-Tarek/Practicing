@@ -1,0 +1,119 @@
+@font-face{
+    src:url(assets/fonts/Roboto-Bold.ttf) ;
+    font-family:'Roboto-Bold' ;
+    font-weight: 700;
+}
+@font-face{
+    src: url(assets/fonts/Roboto-Regular.ttf) ;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*{transition: all 0.75s;}
+body{
+    color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-Regular';
+   /* background-image: linear-gradient(135deg, #9b4a7d, #9f261ae6); */
+  background-color: hsl(235, 18%, 26%);  
+}
+.sign-up{
+    width: 47.4rem;
+    height: 31.8rem;
+    display:flex;
+    /* display: none; */
+    background-color: hsl(0, 0%, 100%) ; 
+   
+   padding:1rem;
+border-radius: 1rem;   
+} 
+h1{
+    font-family: 'Roboto-Bold';
+  font-size: 3.3rem;
+    margin-left: 0.2rem;
+    color:hsl(234, 29%, 20%) ;
+}
+   h2 {
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+.discription{
+   margin-left: 1.7rem;
+ 
+}
+.features p::before{
+content: url(assets/images/icon-list.svg);
+margin-right: 0.4rem;
+vertical-align: middle;
+}
+.features{
+   margin-bottom: 2.5rem;
+    
+}
+.email{
+    box-sizing: border-box;
+    all: unset;
+    width: 20rem;
+    height: 2.8rem;
+    border-radius: 0.4rem;
+       border: hsl(0deg 0% 58% / 40%) 0.1rem solid;
+    padding-left: 0.9rem;
+    margin-bottom: 1rem;
+}
+.submit , .success-message .dismiss{
+    cursor: pointer;
+      box-sizing: border-box;
+    width: 20rem;
+    height: 2.8rem;
+    border-radius: 0.4rem;
+       border: hsl(0deg 0% 58% / 40%) 0.005rem solid;
+       background-color: hsl(234, 29%, 20%);
+  
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.7rem;
+    font-family: "Roboto-Bold";
+}
+.submit:hover,.dismiss:hover   {
+    background-image: linear-gradient(to right,hsl(4, 100%, 67%) 70%,hsl(4, 92%, 55%));
+}
+.start-image{
+    margin-left: 0.5rem;
+}
+
+.success-message{
+   box-sizing: border-box;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 28.6rem;
+    height: 28.1rem;
+    border-radius: 1rem;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.1rem;
+    
+}
+.success-message h1{font-family: "Roboto-Bold";}
+.success-message h1::before{
+   position: absolute;
+    content: url(assets/images/icon-success.svg);
+        top: 1.1rem;
+    transform: scale(0.7);
+   
+}
+.success-message .dismiss{
+   width: 22.4rem;
+    margin-bottom: -1.1rem;
+}
+.success-message p{
+   margin-bottom: 2rem;
+   margin-top: -1.1rem;
+}

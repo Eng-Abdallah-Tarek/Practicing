@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sign-up">
+      <div class="discription">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updated on:</p>
+        <div class="features">
+          <p>Product discovery and building what matters</p>
+          <p>Measuring to ensure updates are a sucess</p>
+          <p>And much more!</p>
+        </div>
+        <h2>Email address</h2>
+        <form class="SignForm">
+          <input
+            class="email"
+            type="email"
+            placeholder="email@company.com"
+            required
+          />
+          <br />
+          <input
+            class="submit"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
+      </div>
+      <img
+        class="start-image"
+        src="assets/images/illustration-sign-up-desktop.svg"
+      />
+    </div>
+    <div class="success-message" style="display: none">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="dismiss">Dismiss message</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
