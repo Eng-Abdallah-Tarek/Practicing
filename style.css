@@ -29,7 +29,7 @@ body{
     display:flex;
     /* display: none; */
     background-color: hsl(0, 0%, 100%) ; 
-   
+   position: relative;
    padding:1rem;
 border-radius: 1rem;   
 } 
@@ -122,6 +122,19 @@ vertical-align: middle;
 .mobile-image{
     display: none;
 }
+
+.sign-up h2::after{
+    display: none;
+}
+.sign-up.active h2::after{
+    content: 'Valid email required';
+    position: absolute;
+    color: hsl(4, 100%, 67%);
+    left: 16.6rem;
+    
+    display: inline;
+}
+
 
 @media(max-width: 480px){
    
