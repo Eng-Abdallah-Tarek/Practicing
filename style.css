@@ -40,7 +40,7 @@ h1{
     color:hsl(234, 29%, 20%) ;
 }
    h2 {
-    font-size: 0.6rem;
+   font-size: 1.8vh;
     margin-bottom: 0.4rem;
 }
 .discription{
@@ -83,7 +83,8 @@ vertical-align: middle;
     background-image: linear-gradient(to right,hsl(4, 100%, 67%) 70%,hsl(4, 92%, 55%));
 }
 .start-image{
-    margin-left: 0.5rem;
+    
+    margin-right: -1.7rem;
 }
 
 .success-message{
@@ -116,4 +117,52 @@ vertical-align: middle;
 .success-message p{
    margin-bottom: 2rem;
    margin-top: -1.1rem;
+}
+
+.mobile-image{
+    display: none;
+}
+
+@media(max-width: 480px){
+   
+  body,html{
+    font-size: 8px;
+    min-height: 100vh;
+}
+.sign-up{
+    flex-direction: column-reverse;
+   height:  100%;
+    padding: 0;
+    margin: 0;
+    
+  }
+.start-image{display: none;}
+.discription{
+ height: 47.9rem;
+    box-sizing: border-box;
+    align-self: center;
+    font-size: 2rem;
+}
+
+  .mobile-image{
+   border-radius: 0;
+        width: 48rem;
+        height: 35.5rem;
+        display: block;
+        margin-top: -1rem;
+        align-self: center;
+        box-sizing: border-box;
+  }
+form{
+        padding-inline: 4rem;
+}
+  .email {
+
+ width: 34rem;
+        height: 5.6rem;
+        margin-bottom: 2rem;}
+
+.submit{
+width: 35.3rem;
+               height: 5.8rem;}
 }
